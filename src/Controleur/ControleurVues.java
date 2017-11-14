@@ -25,6 +25,11 @@ public class ControleurVues {
         this.vueMenuPrincipal.construirePanneauProximite();
     }
 
+    public void actionTemperature()
+    {
+        this.vueMenuPrincipal.construirePanneauTemperature();
+    }
+
     public void actionRetourEnArriere() throws SQLException
     {
         this.vueMenuPrincipal.construireMenuPrincipal();

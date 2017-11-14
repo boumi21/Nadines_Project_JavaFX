@@ -24,7 +24,7 @@ public class VueProximite extends Region {
         vBox.setPrefSize(400, (600-30));
 
         Button btnActionRetourEnArriere = new Button("retour");
-        btnActionRetourEnArriere.setPrefSize(200, 15);
+        btnActionRetourEnArriere.setPrefSize(300, 15);
         btnActionRetourEnArriere.setOnAction(new EventHandler<ActionEvent>()
         {
             @Override

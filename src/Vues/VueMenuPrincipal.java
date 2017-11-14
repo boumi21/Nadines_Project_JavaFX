@@ -17,6 +17,7 @@ public class VueMenuPrincipal extends Application {
 
     MenuPrincipal menuPrincipal;
     VueProximite vueProximite;
+    VueTemperature vueTemperature;
 
 
     public static void main(String[] args) {
@@ -52,6 +53,13 @@ public class VueMenuPrincipal extends Application {
         vueProximite= new VueProximite();
 
         panneauPrincipal.setCenter(vueProximite);
+    }
+
+    public void construirePanneauTemperature()
+    {
+        vueTemperature= new VueTemperature();
+
+        panneauPrincipal.setCenter(vueTemperature);
     }
 
     public void construireMenuPrincipal(){

@@ -27,11 +27,11 @@ public class MenuPrincipal extends Region {
         vBox.setPrefSize(400, (600-30));
 
         Button btnActionProximite = new Button("Proximite en fonction du temps");
-        btnActionProximite.setPrefSize(200, 15);
+        btnActionProximite.setPrefSize(300, 15);
         Button btnActionTemperature = new Button("Temperature en fonction du temps");
-        btnActionTemperature.setPrefSize(200, 15);
+        btnActionTemperature.setPrefSize(300, 15);
         Button btnActionProximiteEtTemperature = new Button("Proximite en fonction de la temperature");
-        btnActionProximiteEtTemperature.setPrefSize(200, 15);
+        btnActionProximiteEtTemperature.setPrefSize(300, 15);
 
         btnActionProximite.setOnAction(new EventHandler<ActionEvent>()
         {
@@ -47,12 +47,7 @@ public class MenuPrincipal extends Region {
             @Override
             public void handle(ActionEvent event)
             {
-               /* try {
-                    ControleurVue.getInstance().actionAjouterItem();
-                } catch (ClassNotFoundException | SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }*/
+                ControleurVues.getInstance().actionTemperature();
             }
         });
 
