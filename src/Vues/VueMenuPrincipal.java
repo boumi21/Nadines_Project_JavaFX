@@ -30,7 +30,7 @@ public class VueMenuPrincipal extends Application {
 
         ControleurVues.getInstance().setVueMenuPrincipal(this);
 
-        scenePrincipale.setTitle("Vues.VueMenuPrincipal principal");
+        scenePrincipale.setTitle("Comparaisons de folies");
 
         menuPrincipal = new MenuPrincipal();
 
