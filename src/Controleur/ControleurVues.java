@@ -18,4 +18,10 @@ public class ControleurVues {
     }
 
 
+    public void actionProximite()
+    {
+        this.vueMenuPrincipal.construirePanneauProximite();
+    }
+
+
 }

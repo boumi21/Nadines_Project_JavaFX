@@ -1,5 +1,6 @@
 package Vues;
 
+import Controleur.ControleurVues;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -10,6 +11,8 @@ import javafx.scene.layout.VBox;
 import java.sql.SQLException;
 
 public class MenuPrincipal extends Region {
+
+    VueProximite vueProximite;
 
     public MenuPrincipal(){
         super();
@@ -35,12 +38,7 @@ public class MenuPrincipal extends Region {
             @Override
             public void handle(ActionEvent event)
             {
-               /* try {
-                    ControleurVue.getInstance().actionAjouterItem();
-                } catch (ClassNotFoundException | SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }*/
+                ControleurVues.getInstance().actionProximite();
             }
         });
 

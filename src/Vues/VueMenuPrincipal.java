@@ -14,11 +14,9 @@ import javafx.stage.Stage;
 
 public class VueMenuPrincipal extends Application {
     private BorderPane panneauPrincipal;
-    Button btnActionProximite;
-    Button btnActionTemperature;
-    Button btnActionProximiteEtTemperature;
 
     MenuPrincipal menuPrincipal;
+    VueProximite vueProximite;
 
 
     public static void main(String[] args) {
@@ -47,7 +45,13 @@ public class VueMenuPrincipal extends Application {
         scenePrincipale.setScene(scene);
         scenePrincipale.show();
 
+    }
 
+    public void construirePanneauProximite()
+    {
+        vueProximite= new VueProximite();
+
+        panneauPrincipal.setCenter(vueProximite);
     }
 
 }

@@ -18,6 +18,7 @@ public class VueProximite extends Region {
         BorderPane panneauPrincipal = new BorderPane();
 
         Button btnActionRetourEnArriere = new Button("Annuler");
+        btnActionRetourEnArriere.setPrefSize(200, 15);
         /*btnActionRetourEnArriere.setOnAction(new EventHandler<ActionEvent>()
         {
             @Override
