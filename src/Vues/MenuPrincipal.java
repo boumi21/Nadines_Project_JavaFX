@@ -24,8 +24,11 @@ public class MenuPrincipal extends Region {
         vBox.setPrefSize(400, (600-30));
 
         Button btnActionProximite = new Button("Proximite en fonction du temps");
+        btnActionProximite.setPrefSize(200, 15);
         Button btnActionTemperature = new Button("Temperature en fonction du temps");
+        btnActionTemperature.setPrefSize(200, 15);
         Button btnActionProximiteEtTemperature = new Button("Proximite en fonction de la temperature");
+        btnActionProximiteEtTemperature.setPrefSize(200, 15);
 
         btnActionProximite.setOnAction(new EventHandler<ActionEvent>()
         {

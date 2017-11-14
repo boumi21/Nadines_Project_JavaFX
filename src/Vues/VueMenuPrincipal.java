@@ -42,6 +42,7 @@ public class VueMenuPrincipal extends Application {
         menuPrincipal.setStyle("-fx-background-color: #279385");
 
         panneauPrincipal.setPrefSize(scene.getWidth(), scene.getHeight());
+        panneauPrincipal.setCenter(menuPrincipal);
 
         scenePrincipale.setScene(scene);
         scenePrincipale.show();
