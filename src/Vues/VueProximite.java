@@ -2,10 +2,12 @@ package Vues;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 public class VueProximite extends Region {
 
@@ -17,7 +19,11 @@ public class VueProximite extends Region {
     private void ConstruirePanneau(){
         BorderPane panneauPrincipal = new BorderPane();
 
-        Button btnActionRetourEnArriere = new Button("Annuler");
+        VBox vBox = new VBox();
+        vBox.setPadding(new Insets(10));
+        vBox.setPrefSize(400, (600-30));
+
+        Button btnActionRetourEnArriere = new Button("retour");
         btnActionRetourEnArriere.setPrefSize(200, 15);
         /*btnActionRetourEnArriere.setOnAction(new EventHandler<ActionEvent>()
         {
@@ -32,7 +38,7 @@ public class VueProximite extends Region {
             }
         });*/
 
-        panneauPrincipal.getChildren().add(btnActionRetourEnArriere);
-        this.getChildren().add(panneauPrincipal);
+        vBox.getChildren().add(btnActionRetourEnArriere);
+        this.getChildren().add(vBox);
     }
 }
