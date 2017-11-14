@@ -1,5 +1,6 @@
 package Vues;
 
+import Controleur.ControleurVues;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -17,7 +18,6 @@ public class VueProximite extends Region {
     }
 
     private void ConstruirePanneau(){
-        BorderPane panneauPrincipal = new BorderPane();
 
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10));
@@ -25,18 +25,18 @@ public class VueProximite extends Region {
 
         Button btnActionRetourEnArriere = new Button("retour");
         btnActionRetourEnArriere.setPrefSize(200, 15);
-        /*btnActionRetourEnArriere.setOnAction(new EventHandler<ActionEvent>()
+        btnActionRetourEnArriere.setOnAction(new EventHandler<ActionEvent>()
         {
             @Override
             public void handle(ActionEvent event)
             {
                 try {
-                    ControleurVue.getInstance().actionRetourEnArriere();
+                    ControleurVues.getInstance().actionRetourEnArriere();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-        });*/
+        });
 
         vBox.getChildren().add(btnActionRetourEnArriere);
         this.getChildren().add(vBox);

@@ -54,4 +54,10 @@ public class VueMenuPrincipal extends Application {
         panneauPrincipal.setCenter(vueProximite);
     }
 
+    public void construireMenuPrincipal(){
+        menuPrincipal = new MenuPrincipal();
+
+        panneauPrincipal.setCenter(menuPrincipal);
+    }
+
 }

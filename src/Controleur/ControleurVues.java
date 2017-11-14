@@ -2,6 +2,8 @@ package Controleur;
 
 import Vues.VueMenuPrincipal;
 
+import java.sql.SQLException;
+
 public class ControleurVues {
     protected static ControleurVues instance;
     private VueMenuPrincipal vueMenuPrincipal = null;
@@ -21,6 +23,11 @@ public class ControleurVues {
     public void actionProximite()
     {
         this.vueMenuPrincipal.construirePanneauProximite();
+    }
+
+    public void actionRetourEnArriere() throws SQLException
+    {
+        this.vueMenuPrincipal.construireMenuPrincipal();
     }
 
 
