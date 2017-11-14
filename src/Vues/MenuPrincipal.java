@@ -31,13 +31,47 @@ public class MenuPrincipal extends Region {
             @Override
             public void handle(ActionEvent event)
             {
-                try {
+               /* try {
                     ControleurVue.getInstance().actionAjouterItem();
                 } catch (ClassNotFoundException | SQLException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
-                }
+                }*/
             }
         });
+
+        btnActionTemperature.setOnAction(new EventHandler<ActionEvent>()
+        {
+            @Override
+            public void handle(ActionEvent event)
+            {
+               /* try {
+                    ControleurVue.getInstance().actionAjouterItem();
+                } catch (ClassNotFoundException | SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }*/
+            }
+        });
+
+        btnActionProximiteEtTemperature.setOnAction(new EventHandler<ActionEvent>()
+        {
+            @Override
+            public void handle(ActionEvent event)
+            {
+               /* try {
+                    ControleurVue.getInstance().actionAjouterItem();
+                } catch (ClassNotFoundException | SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }*/
+            }
+        });
+
+        vBox.getChildren().addAll(btnActionProximite, btnActionTemperature, btnActionProximiteEtTemperature);
+
+        this.getChildren().add(vBox);
+
+
     }
 }
