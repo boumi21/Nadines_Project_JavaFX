@@ -29,7 +29,7 @@
       <file leaf-file-name="VueMenuPrincipal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vues/VueMenuPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="446">
               <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuPrincipal.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MenuPrincipal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vues/MenuPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="840">
               <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,13 +68,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VueProximite.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VueProximite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Vues/VueProximite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1041#1056#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,11 +127,11 @@
         <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/MenuPrincipal.java" />
         <option value="$PROJECT_DIR$/src/ApplicationDesktop.java" />
-        <option value="$PROJECT_DIR$/src/Vues/VueProximite.java" />
         <option value="$PROJECT_DIR$/src/Vues/VueTemperature.java" />
         <option value="$PROJECT_DIR$/src/Vues/VueMenuPrincipal.java" />
         <option value="$PROJECT_DIR$/src/Controleur/ControleurVues.java" />
         <option value="$PROJECT_DIR$/src/Vues/MenuPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/Vues/VueProximite.java" />
       </list>
     </option>
   </component>
@@ -348,12 +349,12 @@
       <option name="presentableId" value="Default" />
       <updated>1510162495755</updated>
       <workItem from="1510162499857" duration="668000" />
-      <workItem from="1510548468639" duration="15344000" />
+      <workItem from="1510548468639" duration="16628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16012000" />
+    <option name="totallyTimeSpent" value="17296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -419,16 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vues/VueProximite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ApplicationDesktop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -461,9 +452,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vues/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vues/VueMenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
+        <state relative-caret-position="446">
           <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -473,16 +478,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vues/MenuPrincipal.java">
+    <entry file="file://$PROJECT_DIR$/src/Vues/VueProximite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+        <state relative-caret-position="105">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1041#1056#0" expanded="true" />
           </folding>
         </state>
       </provider>
