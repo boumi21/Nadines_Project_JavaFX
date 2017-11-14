@@ -14,9 +14,11 @@ import javafx.stage.Stage;
 
 public class VueMenuPrincipal extends Application {
     private BorderPane panneauPrincipal;
-    Button btnActionProximite = new Button("Proximite en fonction du temps");
-    Button btnActionTemperature = new Button("Temperature en fonction du temps");
-    Button btnActionProximiteEtTemperature = new Button("Proximite en fonction de la temperature");
+    Button btnActionProximite;
+    Button btnActionTemperature;
+    Button btnActionProximiteEtTemperature;
+
+    MenuPrincipal menuPrincipal;
 
 
     public static void main(String[] args) {
@@ -30,34 +32,9 @@ public class VueMenuPrincipal extends Application {
 
         scenePrincipale.setTitle("Vues.VueMenuPrincipal principal");
 
-        VBox vBox = new VBox();
-        vBox.setPadding(new Insets(10));
-        vBox.setPrefSize(400, (600-30));
-
-       /* btnActionProximite.setOnAction(e-> ButtonClicked(e));
-        btnActionTemperature.setOnAction(e-> ButtonClicked(e));
-        btnActionProximiteEtTemperature.setOnAction(e-> ButtonClicked(e));*/
-
-
-
-
-        vBox.getChildren().add(btnActionTemperature);
-        vBox.getChildren().add(btnActionProximite);
-        vBox.getChildren().add(btnActionProximiteEtTemperature);
-
-        panneauPrincipal.getChildren().add(vBox);
+        menuPrincipal = new MenuPrincipal();
 
 
     }
-
-    /*public void ButtonClicked(ActionEvent e)
-    {
-        if (e.getSource()==btnActionProximite) {
-            stagePrincipal.setScene(scene1);
-        }else if (e.getSource()==btnActionTemperature) {
-            stagePrincipal.setScene(scene2);
-        } else {
-            stagePrincipal.setScene(scene3);
-        }
-    }*/
+    
 }

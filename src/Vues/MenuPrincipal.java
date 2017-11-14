@@ -18,6 +18,7 @@ public class MenuPrincipal extends Region {
 
     private void ConstruirePanneau(){
 
+        System.out.println("MDRRRRRRRR");
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10));
         vBox.setPrefSize(400, (600-30));
