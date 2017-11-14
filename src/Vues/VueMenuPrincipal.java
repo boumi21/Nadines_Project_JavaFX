@@ -11,7 +11,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class MenuPrincipal extends Application {
+public class VueMenuPrincipal extends Application {
     Scene scene1, scene2, scene3;
     VBox vBox = new VBox();
     StackPane panneauPrincipal;
@@ -28,7 +28,7 @@ public class MenuPrincipal extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         stagePrincipal=primaryStage;
-        stagePrincipal.setTitle("Vues.MenuPrincipal principal");
+        stagePrincipal.setTitle("Vues.VueMenuPrincipal principal");
 
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10));
