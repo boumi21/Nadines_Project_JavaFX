@@ -1,6 +1,6 @@
 package Modeles;
 
-public class Proximite {
+public class Temperature {
     protected float degres;
     protected String date;
 

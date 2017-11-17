@@ -1,6 +1,7 @@
 package Donnees;
 
 import Modeles.Proximite;
+import Modeles.Temperature;
 
 import java.util.ArrayList;
 import java.util.List;
