@@ -43,7 +43,7 @@ public class VueProximite extends Region {
         lineChart.setTitle("Proximité en fonction du temps");
         //defining a series
         XYChart.Series series = new XYChart.Series();
-        series.setName("Cellulaire");
+        series.setName("Proximité");
         //populating the series with data
         for (int i = 0; i < ProximiteDAO.getInstance().getListeProximite().size(); i++) {
             series.getData().add(new XYChart.Data(i, ProximiteDAO.getInstance().getListeProximite().get(i).getValeurProximite()));

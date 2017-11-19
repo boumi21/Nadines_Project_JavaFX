@@ -56,12 +56,7 @@ public class MenuPrincipal extends Region {
             @Override
             public void handle(ActionEvent event)
             {
-               /* try {
-                    ControleurVue.getInstance().actionAjouterItem();
-                } catch (ClassNotFoundException | SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }*/
+                ControleurVues.getInstance().actionTemperatureEtProximite();
             }
         });
 

@@ -25,8 +25,12 @@ public class ProximiteDAO {
     }
 
     public void ajouterDansListeProximite(Proximite proximite){
-        System.out.println(listeProximite);
+        System.out.println(listeProximite.toString());
         listeProximite.add(proximite);
+    }
+
+    public void nettoyerListe(){
+        listeProximite.clear();
     }
 
     public List<Proximite> getListeProximite() {

@@ -44,7 +44,7 @@ public class VueTemperature extends Region {
         lineChart.setTitle("Température en fonction du temps");
         //defining a series
         XYChart.Series series = new XYChart.Series();
-        series.setName("Cellulaire");
+        series.setName("Température");
         //populating the series with data
         for (int i = 0; i < TemperatureDAO.getInstance().getListeTemperature().size(); i++) {
             series.getData().add(new XYChart.Data(i, TemperatureDAO.getInstance().getListeTemperature().get(i).getValeurTemperature()));

@@ -34,29 +34,29 @@ public class VueProximiteEtTemperature extends Region {
         //defining the axes
         final NumberAxis xAxis = new NumberAxis();
         final NumberAxis yAxis = new NumberAxis();
-        xAxis.setLabel("Température (degrés)");
-        yAxis.setLabel("Proximité (cm)");
+        xAxis.setLabel("Temps (heures)");
+        yAxis.setLabel("Proximité (cm) et Température (celsius)");
         //creating the chart
         final LineChart<Number,Number> lineChart =
                 new LineChart<Number,Number>(xAxis,yAxis);
 
-        lineChart.setTitle("Proximité en fonction de la température");
+        lineChart.setTitle("Proximité et température en fonction du temps");
         //defining a series
         XYChart.Series series1 = new XYChart.Series();
-        series1.setName("Cellulaire");
+        series1.setName("Proximité");
         //populating the series with data
         for (int i = 0; i < ProximiteDAO.getInstance().getListeProximite().size(); i++) {
             series1.getData().add(new XYChart.Data(i, ProximiteDAO.getInstance().getListeProximite().get(i).getValeurProximite()));
         }
 
         XYChart.Series series2 = new XYChart.Series();
-        series2.setName("Cellulaire");
+        series2.setName("Température");
         //populating the series with data
         for (int i = 0; i < TemperatureDAO.getInstance().getListeTemperature().size(); i++) {
             series2.getData().add(new XYChart.Data(i, TemperatureDAO.getInstance().getListeTemperature().get(i).getValeurTemperature()));
         }
 
-        lineChart.getData().add(series2);
+        lineChart.getData().addAll(series1, series2);
 
 
 

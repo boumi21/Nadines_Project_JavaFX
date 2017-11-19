@@ -43,6 +43,7 @@ public class Connection extends Thread  {
             org.w3c.dom.Document document = parser.parse(new StringBufferInputStream(buffer.toString()));
 
             NodeList listeValeur = document.getElementsByTagName("proximite");
+            ProximiteDAO.getInstance().nettoyerListe();
             for (int positon = 0; positon < listeValeur.getLength(); positon++) {
                 Node noeudValeur = listeValeur.item(positon);
                 if(noeudValeur.getNodeType() == Node.ELEMENT_NODE){
@@ -77,6 +78,7 @@ public class Connection extends Thread  {
             org.w3c.dom.Document document = parser.parse(new StringBufferInputStream(buffer.toString()));
 
             NodeList listeValeur = document.getElementsByTagName("temperature");
+            TemperatureDAO.getInstance().nettoyerListe();
             for (int positon = 0; positon < listeValeur.getLength(); positon++) {
                 Node noeudValeur = listeValeur.item(positon);
                 if(noeudValeur.getNodeType() == Node.ELEMENT_NODE){

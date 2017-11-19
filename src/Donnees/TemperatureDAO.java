@@ -23,6 +23,10 @@ public class TemperatureDAO {
         listeTemperature.add(temperature);
     }
 
+    public void nettoyerListe(){
+        listeTemperature.clear();
+    }
+
     public List<Temperature> getListeTemperature() {
         return listeTemperature;
     }
