@@ -25,6 +25,7 @@ public class MenuPrincipal extends Region {
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10));
         vBox.setPrefSize(400, (600-30));
+        this.setStyle("-fx-background-color: #279385");
 
         Button btnActionProximite = new Button("Proximite en fonction du temps");
         btnActionProximite.setPrefSize(300, 15);
