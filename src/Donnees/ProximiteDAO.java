@@ -15,12 +15,17 @@ public class ProximiteDAO {
 
     private static ProximiteDAO instance;
 
+    private ProximiteDAO() {
+        listeProximite = new ArrayList<>();
+    }
+
     public static ProximiteDAO getInstance(){
         if (instance == null) instance = new ProximiteDAO();
         return instance;
     }
 
     public void ajouterDansListeProximite(Proximite proximite){
+        System.out.println(listeProximite);
         listeProximite.add(proximite);
     }
 

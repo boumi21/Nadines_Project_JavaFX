@@ -1,21 +1,21 @@
 package Modeles;
 
 public class Temperature {
-    protected float degres;
+    protected float valeurTemperature;
     protected String date;
 
-    public Temperature(float degres, String date) {
-        this.degres = degres;
+    public Temperature(float valeurTemperature, String date) {
+        this.valeurTemperature = valeurTemperature;
         this.date = date;
     }
 
 
-    public float getDegres() {
-        return degres;
+    public float getValeurTemperature() {
+        return valeurTemperature;
     }
 
-    public void setDegres(float degres) {
-        this.degres = degres;
+    public void setValeurTemperature(float degres) {
+        this.valeurTemperature = degres;
     }
 
     public String getDate() {

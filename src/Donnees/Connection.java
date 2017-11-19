@@ -1,6 +1,7 @@
 package Donnees;
 
 import Modeles.Proximite;
+import Modeles.Temperature;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -49,6 +50,40 @@ public class Connection extends Thread  {
                     String valeur = getProximiteAttribut(element, "valeur");
                     String date = getProximiteAttribut(element, "date");
                     ProximiteDAO.getInstance().ajouterDansListeProximite(new Proximite(Float.parseFloat(valeur), date));
+                }
+            }
+
+
+            fini = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            URL url = new URL("http://127.0.0.1/temperature/liste");
+            connection = (HttpURLConnection) url.openConnection();
+            connection.connect();
+
+            InputStream stream = connection.getInputStream();
+            reader = new BufferedReader(new InputStreamReader(stream));
+
+            StringBuffer buffer = new StringBuffer();
+            String line = "";
+            while((line = reader.readLine()) != null){
+                buffer.append(line);
+            }
+
+            DocumentBuilder parser = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            org.w3c.dom.Document document = parser.parse(new StringBufferInputStream(buffer.toString()));
+
+            NodeList listeValeur = document.getElementsByTagName("temperature");
+            for (int positon = 0; positon < listeValeur.getLength(); positon++) {
+                Node noeudValeur = listeValeur.item(positon);
+                if(noeudValeur.getNodeType() == Node.ELEMENT_NODE){
+                    Element element = (Element)noeudValeur;
+                    String degres = getProximiteAttribut(element, "degres");
+                    String date = getProximiteAttribut(element, "date");
+                    TemperatureDAO.getInstance().ajouterDansListeTemperature(new Temperature(Float.parseFloat(degres), date));
                 }
             }
 
