@@ -15,13 +15,6 @@ public class ProximiteDAO {
 
     private static ProximiteDAO instance;
 
-    private Connection connection = null;
-
-    private ProximiteDAO() {
-
-        listeProximite = new ArrayList<>();
-    }
-
     public static ProximiteDAO getInstance(){
         if (instance == null) instance = new ProximiteDAO();
         return instance;

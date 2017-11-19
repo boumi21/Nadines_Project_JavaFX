@@ -15,12 +15,11 @@ public class TemperatureDAO {
         return instance;
     }
 
-    public List<Temperature> CreerListeTemperature(Temperature temperature){
-        if (listeTemperature == null){
-            listeTemperature = new ArrayList<Temperature>();
-        }
-
+    public void ajouterDansListeTemperature(Temperature temperature){
         listeTemperature.add(temperature);
+    }
+
+    public List<Temperature> getListeTemperature() {
         return listeTemperature;
     }
 }

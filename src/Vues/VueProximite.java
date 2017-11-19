@@ -48,7 +48,7 @@ public class VueProximite extends Region {
         for (int i = 0; i < ProximiteDAO.getInstance().getListeProximite().size(); i++) {
             series.getData().add(new XYChart.Data(i, ProximiteDAO.getInstance().getListeProximite().get(i).getValeurProximite()));
         }
-        
+
         lineChart.getData().add(series);
 
 
