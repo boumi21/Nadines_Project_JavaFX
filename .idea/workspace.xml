@@ -12,20 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ControleurVues.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controleur/ControleurVues.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Proximite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modeles/Proximite.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,6 +20,19 @@
               <folding>
                 <element signature="e#287#288#0" expanded="true" />
                 <element signature="e#325#326#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuPrincipal.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Vues/MenuPrincipal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+              <folding>
+                <element signature="e#1497#1498#0" expanded="true" />
+                <element signature="e#1577#1578#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,8 +51,8 @@
       <file leaf-file-name="VueProximite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vues/VueProximite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-205">
-              <caret line="48" column="115" lean-forward="false" selection-start-line="48" selection-start-column="115" selection-end-line="48" selection-end-column="115" />
+            <state relative-caret-position="383">
+              <caret line="76" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +75,7 @@
       <file leaf-file-name="ProximiteDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Donnees/ProximiteDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="483">
               <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Donnees/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
@@ -116,6 +115,18 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#4278#4279#0" expanded="true" />
                 <element signature="e#4305#4306#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VueProximiteEtTemperature.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vues/VueProximiteEtTemperature.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/Donnees/ProximiteDAO.java" />
         <option value="$PROJECT_DIR$/src/Donnees/TemperatureDAO.java" />
         <option value="$PROJECT_DIR$/src/Donnees/Connection.java" />
+        <option value="$PROJECT_DIR$/src/Vues/VueProximiteEtTemperature.java" />
       </list>
     </option>
   </component>
@@ -392,12 +404,12 @@
       <updated>1510162495755</updated>
       <workItem from="1510162499857" duration="668000" />
       <workItem from="1510548468639" duration="21512000" />
-      <workItem from="1511056177177" duration="7694000" />
+      <workItem from="1511056177177" duration="8650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35138000" />
+    <option name="totallyTimeSpent" value="36094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -854,23 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vues/VueProximiteEtTemperature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vues/MenuPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vues/VueMenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -940,16 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vues/VueProximite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="48" column="115" lean-forward="false" selection-start-line="48" selection-start-column="115" selection-end-line="48" selection-end-column="115" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vues/VueTemperature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -976,9 +961,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Donnees/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="85" column="116" lean-forward="false" selection-start-line="85" selection-start-column="116" selection-end-line="85" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4305#4306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Donnees/ProximiteDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="483">
           <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -990,14 +987,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Donnees/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/Vues/VueProximite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="85" column="116" lean-forward="false" selection-start-line="85" selection-start-column="116" selection-end-line="85" selection-end-column="116" />
+        <state relative-caret-position="383">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4278#4279#0" expanded="true" />
-            <element signature="e#4305#4306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vues/VueProximiteEtTemperature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vues/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+          <folding>
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
           </folding>
         </state>
       </provider>

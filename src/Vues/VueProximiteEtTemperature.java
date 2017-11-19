@@ -1,4 +1,85 @@
 package Vues;
 
-public class VueProximiteEtTemperature {
+import Controleur.ControleurVues;
+import Donnees.Connection;
+import Donnees.ProximiteDAO;
+import Donnees.TemperatureDAO;
+import Modeles.Temperature;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
+
+public class VueProximiteEtTemperature extends Region {
+
+    public VueProximiteEtTemperature(){
+        super();
+        ConstruirePanneau();
+    }
+
+    private void ConstruirePanneau(){
+        Connection connection = new Connection();
+        connection.start();
+        while (!connection.isFini());
+        VBox vBox = new VBox();
+        vBox.setPadding(new Insets(10));
+        vBox.setPrefSize(400, (600-30));
+
+
+        //defining the axes
+        final NumberAxis xAxis = new NumberAxis();
+        final NumberAxis yAxis = new NumberAxis();
+        xAxis.setLabel("Température (degrés)");
+        yAxis.setLabel("Proximité (cm)");
+        //creating the chart
+        final LineChart<Number,Number> lineChart =
+                new LineChart<Number,Number>(xAxis,yAxis);
+
+        lineChart.setTitle("Proximité en fonction de la température");
+        //defining a series
+        XYChart.Series series1 = new XYChart.Series();
+        series1.setName("Cellulaire");
+        //populating the series with data
+        for (int i = 0; i < ProximiteDAO.getInstance().getListeProximite().size(); i++) {
+            series1.getData().add(new XYChart.Data(i, ProximiteDAO.getInstance().getListeProximite().get(i).getValeurProximite()));
+        }
+
+        XYChart.Series series2 = new XYChart.Series();
+        series2.setName("Cellulaire");
+        //populating the series with data
+        for (int i = 0; i < TemperatureDAO.getInstance().getListeTemperature().size(); i++) {
+            series2.getData().add(new XYChart.Data(i, TemperatureDAO.getInstance().getListeTemperature().get(i).getValeurTemperature()));
+        }
+
+        lineChart.getData().add(series2);
+
+
+
+
+
+
+        Button btnActionRetourEnArriere = new Button("retour");
+        btnActionRetourEnArriere.setPrefSize(300, 15);
+        btnActionRetourEnArriere.setOnAction(new EventHandler<ActionEvent>()
+        {
+            @Override
+            public void handle(ActionEvent event)
+            {
+                try {
+                    ControleurVues.getInstance().actionRetourEnArriere();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        vBox.getChildren().add(lineChart);
+        vBox.getChildren().add(btnActionRetourEnArriere);
+        this.getChildren().add(vBox);
+    }
 }
