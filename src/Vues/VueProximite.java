@@ -1,6 +1,8 @@
 package Vues;
 
 import Controleur.ControleurVues;
+import Donnees.Connection;
+import Donnees.ProximiteDAO;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -21,7 +23,9 @@ public class VueProximite extends Region {
     }
 
     private void ConstruirePanneau(){
-
+        Connection connection = new Connection();
+        connection.start();
+        while (!connection.isFini());
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10));
         vBox.setPrefSize(400, (600-30));
@@ -41,19 +45,10 @@ public class VueProximite extends Region {
         XYChart.Series series = new XYChart.Series();
         series.setName("Cellulaire");
         //populating the series with data
-        series.getData().add(new XYChart.Data(1, 23));
-        series.getData().add(new XYChart.Data(2, 14));
-        series.getData().add(new XYChart.Data(3, 15));
-        series.getData().add(new XYChart.Data(4, 24));
-        series.getData().add(new XYChart.Data(5, 34));
-        series.getData().add(new XYChart.Data(6, 36));
-        series.getData().add(new XYChart.Data(7, 22));
-        series.getData().add(new XYChart.Data(8, 45));
-        series.getData().add(new XYChart.Data(9, 43));
-        series.getData().add(new XYChart.Data(10, 17));
-        series.getData().add(new XYChart.Data(11, 29));
-        series.getData().add(new XYChart.Data(12, 25));
-
+        for (int i = 0; i < ProximiteDAO.getInstance().getListeProximite().size(); i++) {
+            series.getData().add(new XYChart.Data(i, ProximiteDAO.getInstance().getListeProximite().get(i).getValeurProximite()));
+        }
+        
         lineChart.getData().add(series);
 
 

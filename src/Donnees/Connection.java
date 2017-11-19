@@ -1,5 +1,6 @@
 package Donnees;
 
+import Modeles.Proximite;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -16,6 +17,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Connection extends Thread  {
+    private boolean fini;
+
     @Override
     public synchronized void start() {
         super.start();
@@ -45,14 +48,21 @@ public class Connection extends Thread  {
                     Element element = (Element)noeudValeur;
                     String valeur = getProximiteAttribut(element, "valeur");
                     String date = getProximiteAttribut(element, "date");
-                    System.out.println(valeur +' '+ date);
+                    ProximiteDAO.getInstance().ajouterDansListeProximite(new Proximite(Float.parseFloat(valeur), date));
                 }
             }
 
 
+            fini = true;
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public boolean isInterrupted() {
+        System.out.println("Ayé yé fini");
+        return super.isInterrupted();
     }
 
     private String getInfoXML(String xml, String valeur){
@@ -63,5 +73,9 @@ public class Connection extends Thread  {
         NodeList typeList = proximite.getElementsByTagName(balise);
         Element elementType = (Element)typeList.item(0);
         return elementType.getChildNodes().item(0).getNodeValue();
+    }
+
+    public boolean isFini() {
+        return fini;
     }
 }
